@@ -1,0 +1,5 @@
+#!/bin/bash
+
+nasm -felf64 -o main.o main.asm
+gcc -o main main.o -no-pie
+./main
